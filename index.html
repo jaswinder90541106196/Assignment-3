@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jam Box Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Add a favicon link for better user experience -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<style>
+  body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #f0f0f0; /* Changed background color to enhance contrast */
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  }
+
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .main-nav ul li a {
+    display: block;
+    color: #333; /* Improved link color for better contrast */
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    /* Improved input and textarea styling for better visibility */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  form textarea {
+    min-height: 150px;
+    max-height: 150px;
+    height: 150px;
+    resize: vertical; /* Allowing vertical resizing for better user experience */
+  }
+
+  form button {
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+
+  .site-footer {
+    padding: 2rem 0;
+    text-align: center; /* Center-aligning footer text */
+  }
+</style>
+
+<body>
+  <!-- Add a skip link for better navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="container">
+    <div class="site-header">
+      <h1 id="main-content">Jam Box Studios</h1>
+      <div class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Studio</a></li>
+        </ul>
+      </div>
+      <img src="https://placekitten.com/1200/900" alt="Banner Image" class="banner">
+    </div>
+    <div class="main-content">
+      <h1>Welcome to Jam Box</h1>
+      <!-- Add landmarks for better accessibility -->
+      <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+      </main>
+      <div class="owner">
+        <h2>Meet the owner</h2>
+        <ul>
+          <li>Name: John Doe</li>
+          <li>Title: CEO</li>
+          <li>Email: <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
+          <li>Phone: <a href="tel:6130000000">613-000-0000</a></li>
+        </ul>
+        <h2>Address</h2>
+        <p>
+          Jambox Studios<br>
+          123 Guitar Road,<br>
+          Musicville, Danceistan<br>
+          B3T 0L0
+        </p>
+      </div>
+      <div class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="thanks.html" method="post">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          <b>Your Message</b>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="site-footer">
+      &copy; 2021 Jam Box Studios
+    </div>
+  </div>
+</body>
+</html>
